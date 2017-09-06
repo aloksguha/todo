@@ -1,0 +1,4 @@
+<div>
+  <input type="text" placeholder="Todo" #addTodo (keyup.enter)="add($event, $event.target.value); $event.target.value=''" />
+  <button (click)="add($event, addTodo.value); addTodo.value=''">Add</button>
+</div>

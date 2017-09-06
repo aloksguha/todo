@@ -1,0 +1,10 @@
+<div *ngIf="todos.length"><input type="search" [(ngModel)]="search"/></div>
+<div *ngIf="todos.length && !search">{{ completed() }}/{{ total() }} done.</div>
+
+<ul>
+  <li *ngFor="let todo of todos | filter: search" [class.done]="todo.done">
+    <input type="checkbox" [checked]="todo.done" (change)="change(todo)">
+    {{ todo.title | uppercase}}
+    <span class="delete" title="Delete" (click)="delete(todo)">x</span>
+  </li>
+</ul>

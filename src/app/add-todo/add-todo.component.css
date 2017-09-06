@@ -1,0 +1,19 @@
+:host {
+    display: block;
+    width: 600px;
+    
+}
+
+input {
+    width: 500px;
+    height: 35px;
+    font-size: .8em;
+    padding: 5px;
+    color: #694E4E;
+}
+button {
+    height: 35px;
+    padding: 5px;
+    font-size: .8em;
+    cursor: pointer;
+}

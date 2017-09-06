@@ -1,0 +1,25 @@
+:host {
+    display: block;
+}
+ul {
+    list-style: none;
+    text-align: left;
+}
+li.done {
+    text-decoration: line-through;
+    color: #aaa;
+}
+input[type="checkbox"] {
+    height: 20px;
+    width: 20px;
+}
+
+.delete {
+    display: none;
+    cursor: pointer;
+    color: #f00;
+}
+li:hover .delete {
+    display: inline-block;
+}
+
